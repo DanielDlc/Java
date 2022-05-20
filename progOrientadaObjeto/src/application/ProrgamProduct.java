@@ -20,8 +20,7 @@ public class ProrgamProduct {
 		System.out.println("Quantity in stock: ");		
 		product.quantity = input.nextInt();
 		
-		// imprimir para testar apenas.
-		System.out.println(product.name + ", " + product.price + ", " + product.quantity);
+		System.out.println(product);
 		
 		input.close();
 
