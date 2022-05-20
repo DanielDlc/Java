@@ -20,7 +20,24 @@ public class ProrgamProduct {
 		System.out.println("Quantity in stock: ");		
 		product.quantity = input.nextInt();
 		
-		System.out.println(product);
+		System.out.println();
+		System.out.println("product data: " + product);
+		System.out.println();
+		
+		System.out.println("Entre the number of products to be added in stock: ");
+		int quantity = input.nextInt();
+		product.addProducts(quantity);
+		
+		System.out.println();
+		System.out.println("Updated data: " + product);	
+		
+		System.out.println();
+		System.out.println("Entre the number of products to be removed from stock: ");
+		quantity = input.nextInt();
+		product.removePRoducts(quantity);
+		
+		System.out.println();
+		System.out.println("product data: " + product);
 		
 		input.close();
 
