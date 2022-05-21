@@ -7,32 +7,33 @@ public class ProrgamProduct {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in);
-		
-		Product product = new Product();
+		Scanner input = new Scanner(System.in);		
 		System.out.println("Enter product data: ");
+		
 		System.out.print("Name: ");
-		product.name = input.nextLine();
+		String name = input.nextLine();
 		
 		System.out.print("Price: ");
-		product.price = input.nextDouble();
+		double price = input.nextDouble();
 		
 		System.out.println("Quantity in stock: ");		
-		product.quantity = input.nextInt();
+		int quantity = input.nextInt();
+		
+		Product product = new Product(name, price, quantity);
 		
 		System.out.println();
 		System.out.println("product data: " + product);
-		System.out.println();
-		
+		System.out.println();	
 		System.out.println("Entre the number of products to be added in stock: ");
-		int quantity = input.nextInt();
+		
+		quantity = input.nextInt();
 		product.addProducts(quantity);
 		
 		System.out.println();
 		System.out.println("Updated data: " + product);	
-		
 		System.out.println();
 		System.out.println("Entre the number of products to be removed from stock: ");
+		
 		quantity = input.nextInt();
 		product.removePRoducts(quantity);
 		
