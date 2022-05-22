@@ -21,6 +21,9 @@ public class ProrgamProduct {
 		
 		Product product = new Product(name, price, quantity);
 		
+		product.setName("Computer");
+		System.out.println("Updated name: " + product.getName());
+		
 		System.out.println();
 		System.out.println("product data: " + product);
 		System.out.println();	
