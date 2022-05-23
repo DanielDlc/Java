@@ -9,6 +9,7 @@ public class Listas {
 
 		List<String> list = new ArrayList<>();
 		
+		
 		list.add("Daniel");
 		list.add("Diego");
 		list.add("Jean");
@@ -17,7 +18,11 @@ public class Listas {
 		
 		for (String nome : list) {
 			System.out.println(nome);
-		}
+		}		
+		list.add(2, "Leandro");             // adicionar elemento.
+		list.remove(4);                    // remover usando índice. 
+		System.out.println(list.size());  // tamanho da lista.
+		
 	}
 
 }
