@@ -20,7 +20,7 @@ public class Vetor {
 			sum += vect[i];
 		}
 		double avg = sum / n;
-		System.out.println("Averange Height: " + avg );		
+		System.out.println("Average Height: " + avg );		
 		
 		input.close();
 		
