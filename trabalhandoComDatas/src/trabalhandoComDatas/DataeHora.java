@@ -16,7 +16,7 @@ public class DataeHora {
 		LocalTime localTime = LocalTime.now();
 		System.out.println("localTime: " + localTime);
 		
-		//exibir date e hora
+		//exibir a data e a hora
 		LocalDateTime localDateTime = LocalDateTime.now();
 		System.out.println("LocalDateTime: " + localDateTime);
 		
