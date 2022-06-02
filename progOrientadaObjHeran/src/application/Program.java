@@ -11,7 +11,7 @@ public class Program {
 		Account acc = new Account(1001, "Diego", 0.0);
 		BusinessAccount bacc = new BusinessAccount(1001, "MAria", 0.0, 500.0);
 
-		// UPCASTING
+		// UPCASTING 
 		Account acc1 = bacc;
 		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
 		Account acc3 = new SavingsAccount(1004, "Miguel", 0.0, 0.01);
