@@ -36,7 +36,7 @@ public class Account {
 		return balance;
 	}
 	
-	public void withdrwan(double amount) {
+	public void withdraw(double amount) {
 		balance -= amount + 5.0;
 	}
 	
