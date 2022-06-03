@@ -1,7 +1,7 @@
 package application;
 
 import entities.Account;
-
+import entities.SavingsAccount;
 
 public class Program {
 
@@ -11,6 +11,11 @@ public class Program {
 		account.withdraw(200.0);
 		System.out.println(account.getBalance());
 		
+		System.out.println();
+		
+		SavingsAccount savingsAccount = new SavingsAccount(1002, "Diego", 1000.0, 0.01);
+		savingsAccount.withdraw(200);
+		System.out.println(savingsAccount.getBalance());
 
 	}
 
