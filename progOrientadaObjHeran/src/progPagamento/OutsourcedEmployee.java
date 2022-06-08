@@ -1,6 +1,6 @@
 package progPagamento;
 
-public class OutsourcedEmployee extends Empoyee {
+public class OutsourcedEmployee extends Employee {
 	
 	private Double additionalCharge;
 	
@@ -22,7 +22,7 @@ public class OutsourcedEmployee extends Empoyee {
 	}
 	
 	@Override
-	public Double payment() {
+	public double payment() {
 		return super.payment() + additionalCharge * 1.1;
 	}
 
