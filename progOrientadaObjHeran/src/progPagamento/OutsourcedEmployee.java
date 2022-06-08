@@ -5,7 +5,7 @@ public class OutsourcedEmployee extends Empoyee {
 	private Double additionalCharge;
 	
 	public OutsourcedEmployee() {
-		super(name, hours, additionalCharge);
+		super();
 	}
 
 	public OutsourcedEmployee(String name, Integer hours, Double valuePerHour, Double additionalCharge) {
