@@ -15,11 +15,11 @@ public class Vector {
 		    int position = input.nextInt();
 		    System.out.println(vect[position]);
 		}
-		catch (ArrayIndexOutOfBoundsException e ) {
+		catch (ArrayIndexOutOfBoundsException numero ) {
 			System.out.println("Posição inválida!");  // aqui tratamos o erro caso digite um índice inválido
 		}
-		catch (InputMismatchException apelido) {
-			System.out.println("Erro Input");  // aqui tratamos o erro caso digite uma string ao invés de um número
+		catch (InputMismatchException letra ) {
+			System.out.println("Input Error");  // aqui tratamos o erro caso digite uma string ao invés de um número
 		}
 		
 		System.out.println("Fim do programa.");
