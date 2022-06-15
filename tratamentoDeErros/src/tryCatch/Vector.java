@@ -1,5 +1,6 @@
 package tryCatch;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Vector {
@@ -15,7 +16,10 @@ public class Vector {
 		    System.out.println(vect[position]);
 		}
 		catch (ArrayIndexOutOfBoundsException e ) {
-			System.out.println("Posição inválida!");
+			System.out.println("Posição inválida!");  // aqui tratamos o erro caso digite um índice inválido
+		}
+		catch (InputMismatchException apelido) {
+			System.out.println("Erro Input");  // aqui tratamos o erro caso digite uma string ao invés de um número
 		}
 		
 		System.out.println("Fim do programa.");
@@ -24,3 +28,4 @@ public class Vector {
 	}
 	
 }
+
