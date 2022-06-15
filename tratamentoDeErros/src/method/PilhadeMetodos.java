@@ -35,6 +35,8 @@ public class PilhadeMetodos {
 		}
 		catch (ArrayIndexOutOfBoundsException e ) {
 			System.out.println("Invalid position!");
+			e.printStackTrace();  // caso ocorra uma exceção com index inexistente podemos analisar 
+			sc.next();
 		}
 		catch (InputMismatchException e) {
 			System.out.println("Input error");
