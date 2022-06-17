@@ -23,6 +23,7 @@ public class ProgramFinally {
 			if (input != null) {
 				input.close();
 			}
+			System.out.println("Finally block executed");
 		}
 		
 	}
