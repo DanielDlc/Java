@@ -8,7 +8,7 @@ public class ProgramFinally {
 	
 	public static void main(String[] args) {
 		
-		File file = new File("C:\\Users\\sharm\\dev\\Java\\tratamentoDeErros\\src\\packageFinally\\in.txt");
+		File file = new File("C:\\temp\\in.txt");
 		Scanner input = null;
 		try {
 			input = new Scanner(file);
