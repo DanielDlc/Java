@@ -8,7 +8,8 @@ public class TrytWithResources {
 
 public static void main(String[] args) {
 		
-		String path = "C:\\Users\\sharm\\dev\\Java\\trabalhandoComArquivos\\src\\in.txt";
+     	// choose temporary directory ->   c:\\temp\\in.txt
+		String path = "c:\\Users\\sharm\\dev\\Java\\trabalhandoComArquivos\\src\\in.txt";
 		
 		// instantiating String directly in try block
 		try (BufferedReader buffer = new BufferedReader(new FileReader(path))) {
